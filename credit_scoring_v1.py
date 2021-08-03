@@ -10,6 +10,11 @@ with open('input.csv') as csvfile:
     for row in readCSV:
         name.append(row[0])
         age.append(row[1])
+       
+ #OR import pandas as pd
+url = 'https://raw.githubusercontent.com/lm-friends/python-learning/main/input.csv'
+df = pd.read_csv(url, index_col=0)
+print(df.head(5))
 
 print(name)
 print(age)
