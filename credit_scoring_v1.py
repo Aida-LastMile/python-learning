@@ -2,17 +2,21 @@ import csv
 name = []
 age = []
 county = []
-county = []
 marital_status = []
+emp_month = []
+credit = []
 with open('input.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
-    next(readCSV, None)  # skip the headers
+    next(readCSV, None)
     for row in readCSV:
         name.append(row[0])
         age.append(row[1])
-
 print(name)
 print(age)
+print(county)
+print(marital)
+print(emp_month)
+print(credit_score)
 
 n = len(name)
 
