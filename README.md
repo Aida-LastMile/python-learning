@@ -4,7 +4,7 @@
 
 Open a Terminal in VSCode and type below to create a new python environment for your project
 
-python3 -m venv env
+py -m venv env
 
 env\Scripts\activate
 
